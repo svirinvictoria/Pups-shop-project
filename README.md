@@ -1,2 +1,4 @@
 # Pups-shop-project
-React with conditional rendering, table, cards.
+React with server and proxy hook. 
+useState, useEffect, filtering products with double for loop
+conditional rendering, table, cards. 
