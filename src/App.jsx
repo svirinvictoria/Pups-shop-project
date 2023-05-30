@@ -1,4 +1,5 @@
-import "./App-styles.scss";
+import React from "react";
+
 import SelectType from "./components/SelectType";
 import AddProduct from "./components/AddProduct";
 import { useState, useEffect } from "react";
@@ -6,6 +7,7 @@ import ShowCard from "./components/ShowCard";
 // import { productListPr, typeListPr } from "./proxy.js";
 import { useProxy } from "./useProxy";
 import ShowTable from "./components/ShowTable";
+import "./App-styles.scss";
 
 function App() {
 	const [productList, setProductList] = useState([]); //original array from the server
