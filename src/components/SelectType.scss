@@ -1,0 +1,25 @@
+.label-text{
+margin-left: 0.7rem;
+margin-bottom: 5%;
+display: flex;
+flex-wrap: nowrap;
+}
+
+//////////////***************///////////////////////
+/// //**Tablet - small**
+@media screen and (max-width:992px) {
+    .label-text{
+    margin-left: 0.5rem;
+    margin-bottom: 5%;
+    font-size: 90%;
+    }
+}
+//////////////***************///////////////////////
+/// //**Cellurar**
+@media screen and (max-width:600px) {
+    .label-text{
+    margin-left: 0.5rem;
+    margin-bottom: 3%;
+    font-size: 130%;
+    }
+}

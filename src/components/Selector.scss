@@ -1,0 +1,27 @@
+.border-green{
+  border: 1.5px solid green;
+}
+.selection-home{
+    width: 100%;
+}
+.select-frame{
+  width: 85%;
+  margin-left: 7%;
+  height: 1.8rem;
+  color: gray;
+  font-size: 90%;
+  text-align: center;
+}
+
+
+
+
+///----------------------------------///////
+/// //Cellular
+@media screen and (max-width: 600px) {
+    .select-frame{
+        width: 85%;
+        font-size: 90%;
+    }
+
+}

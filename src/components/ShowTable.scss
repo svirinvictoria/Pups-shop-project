@@ -1,0 +1,36 @@
+
+.table-style{
+   width: 55vw; 
+   margin: 15% auto;
+   border: 1.5px solid green;
+    
+}
+
+.table-border{
+  border: 1.5px solid green;
+}
+
+tr:nth-child(even){
+    background-color: rgb(204, 227, 203);
+}
+
+tr{
+    text-align: center;
+}
+
+.column-style{
+    height: 2.7rem;
+    width: 33%;
+    
+}
+
+.header-style{
+    background-color: rgb(91, 117, 81);
+    height: 2.7rem;
+    color: white;
+    
+    border-width: 1.5px;
+}
+.inner-border{
+    border-color: green white green green;
+}
