@@ -17,6 +17,11 @@
     "@babel/preset-react": "^7.12.10",
     "nodemon": "^2.0.20"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "scripts": {
     "start": "react-scripts start",
     "start_server": "nodemon src/server.js",
