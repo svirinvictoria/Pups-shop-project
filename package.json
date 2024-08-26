@@ -5,6 +5,7 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.17.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -14,8 +15,9 @@
     "nodemon": "^2.0.20"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "start_server": "nodemon src/server.js",
+    "start": "node server.js",
+    "start-client": "set PORT=3100&& set REACT_APP_URL=http://localhost:2100&& react-scripts start",
+    "start-server": "nodemon server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

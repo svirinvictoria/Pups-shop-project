@@ -1,6 +1,5 @@
 import React from "react";
 import './Selector.scss';
-import { productListPr } from "../proxy.js";
 
 const Selector=(props)=>{
       const classes = "select-frame border-green " + props.className;

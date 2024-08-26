@@ -1,4 +1,3 @@
-import React from "react";
 import "./ShowTable.scss"
 const ShowTable = (props)=>{
     

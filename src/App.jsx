@@ -1,13 +1,10 @@
-import React from "react";
-
+import "./App-styles.scss";
 import SelectType from "./components/SelectType";
 import AddProduct from "./components/AddProduct";
 import { useState, useEffect } from "react";
 import ShowCard from "./components/ShowCard";
-// import { productListPr, typeListPr } from "./proxy.js";
 import { useProxy } from "./useProxy";
 import ShowTable from "./components/ShowTable";
-import "./App-styles.scss";
 
 function App() {
 	const [productList, setProductList] = useState([]); //original array from the server
@@ -53,19 +50,14 @@ function App() {
 	//choosing products that have the same type as chosen type
 	useEffect(() => {
 		const newArr = [];
-		// console.log("1 " + originalList);
-		// console.log("2 " + typesList);
 		for (let i = 0; i < originalList.length; i++) {
 			for (let j = 0; j < typesList.length; j++) {
 				if (typesList[j].typeStatus === true) {
 					if (originalList[i].productType === typesList[j].typeName) {
-						// console.log("3 " + originalList[i].productType);
-						// console.log("4 " + typesList[j].typeName);
 						newArr.push(originalList[i]);
 					}
 				}
 			}
-			// console.log("5" + newArr);
 		}
 		setFilteredList(newArr);
 	}, [typesList]);

@@ -1,28 +1,9 @@
 import React from "react";
-// import { productListPr, typeListPr } from "../proxy.js";
 import "./ShowCard.scss"
 
 
 const ShowCard = (props)=> { 
-	// const changeColor = (props, className) => {
-	// 	switch (props.filteredList.productType) {
-	// 		case "Gemuse":
-	// 			return (className = "green");
-
-	// 		case "Obst":
-	// 			return (className = "yellow");
-
-	// 		case "Milch":
-	// 			return (className = "blue");
-
-	// 		case "Fleisch":
-	// 			return (className = "red");
-
-	// 		default:
-	// 			return (className = "green");
-	// 	}
-	// };
-
+	
 	const changeClass = (productType)=>{
 		if (productType === "Gemuese") {
 			return("green");
