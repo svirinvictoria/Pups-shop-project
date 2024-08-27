@@ -1,36 +1,58 @@
-
-.table-style{
-   width: 55vw; 
-   margin: 15% auto;
-   border: 1.5px solid green;
-    
+.table-container {
+  padding: 0%;
+  margin: 0%;
+  .table-style {
+    max-width: 65vw;
+    margin: 15% auto;
+    border: 1.5px solid green;
+  }
 }
 
-.table-border{
+.table-border {
   border: 1.5px solid green;
 }
 
-tr:nth-child(even){
-    background-color: rgb(204, 227, 203);
+tr:nth-child(even) {
+  background-color: rgb(204, 227, 203);
 }
 
-tr{
-    text-align: center;
+tr {
+  text-align: center;
 }
 
-.column-style{
-    height: 2.7rem;
-    width: 33%;
-    
+.column-style {
+  height: 2.7rem;
+  width: 33%;
 }
 
-.header-style{
-    background-color: rgb(91, 117, 81);
-    height: 2.7rem;
-    color: white;
+.header-style {
+  background-color: rgb(91, 117, 81);
+  height: 2.7rem;
+  color: white;
 
-    border-width: 1.5px;
+  border-width: 1.5px;
 }
-.inner-border{
-    border-color: green white green green;
+.inner-border {
+  border-color: green white green green;
+}
+//////////////////////////////////////////////
+//Tablet - big
+@media screen and (max-width: 1024px) {
+  .table-container {
+    width: 80%;
+    .table-style {
+      // max-width: 55vw;
+      margin: 5% auto;
+      font-size: 90%;
+    }
+  }
+}
+//////////////////////////////////////////////
+//CELLULAR
+@media screen and (max-width: 600px) {
+  .table-container {
+    .table-style {
+      font-size: 80%;
+    }
+  }
 }

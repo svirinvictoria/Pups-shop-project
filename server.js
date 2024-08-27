@@ -1,3 +1,5 @@
+// import kaese from "./src/img/kaese.jpg";
+
 var path = require("path");
 const cors = require("cors");
 const express = require("express");
@@ -26,8 +28,6 @@ app.get("/products", function (req, res) {
 app.post("/addProduct", function (req, res) {
   //getting a product from a server - in the body of POST method
   const savedProduct = req.body;
-  //   console.log(req.body);
-  //   console.log("product from server " + savedProduct);
 
   const productIndex = arrayOfProducts.findIndex((currProduct) => {
     //checking if the product already exists
@@ -46,81 +46,81 @@ app.post("/addProduct", function (req, res) {
 });
 
 function allTypes() {
-  return ["Obst", "Gemuese", "Milch", "Fleisch"];
+  return ["Obst", "Gemüse", "Milch", "Fleisch"];
 }
 
 function allProducts() {
   return [
     {
-      productName: "Kaese 1",
+      productName: "Käse",
       productType: "Milch",
-      productImage: null,
+      image: "/img/kaese.jpg",
       productPrise: "1.5",
     },
     {
-      productName: "Kaese 2",
+      productName: "Milch",
       productType: "Milch",
-      productImage: null,
+      image: "/img/milch.jpg",
       productPrise: "1.7",
     },
     {
-      productName: "Kaese 3",
+      productName: "Joghurt",
       productType: "Milch",
-      productImage: null,
+      image: "/img/joghurt.jpg",
       productPrise: "2.2",
     },
     {
-      productName: "Wurst 1",
+      productName: "Würstchen",
       productType: "Fleisch",
-      productImage: null,
+      image: "/img/wuerstchen.jpg",
       productPrise: "2.5",
     },
     {
-      productName: "Wurst 2",
+      productName: "Wurst",
       productType: "Fleisch",
-      productImage: null,
+      image: "/img/wurst.jpg",
       productPrise: "1.8",
     },
     {
-      productName: "Wurst 3",
+      productName: "Bacon",
       productType: "Fleisch",
-      productImage: null,
+      image: "/img/bacon.jpg",
       productPrise: "1.4",
     },
     {
-      productName: "Obst 1",
+      productName: "Äpfel",
       productType: "Obst",
-      productImage: null,
+      image: "/img/aepfel.jpg",
       productPrise: "0.8",
     },
     {
-      productName: "Obst 2",
+      productName: "Birnen",
       productType: "Obst",
-      productImage: null,
+      image: "/img/birne.jpg",
       productPrise: "1.3",
     },
     {
-      productName: "Obst 3",
+      productName: "Weintrauben",
       productType: "Obst",
-      productImage: null,
+      image: "/img/weintrauben.jpg",
       productPrise: "2.4",
     },
     {
-      productName: "Gemuese 1",
-      productType: "Gemuese",
-      productImage: null,
+      productName: "Kartoffeln",
+      productType: "Gemüse",
+      image: "/img/potato.jpg",
       productPrise: "1.8",
     },
     {
-      productName: "Gemuese 2",
-      productType: "Gemuese",
-      productImage: null,
+      productName: "Tomaten",
+      productType: "Gemüse",
+      image: "/img/tomato.jpg",
       productPrise: "1.4",
     },
     {
-      productName: "Gemuese 3",
-      productType: "Gemuese",
-      productImage: null,
+      productName: "Zwiebeln",
+      productType: "Gemüse",
+      image: "/img/onion.jpg",
       productPrise: "1.5",
     },
   ];

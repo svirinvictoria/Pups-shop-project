@@ -64,7 +64,7 @@ const AddProduct = (props)=>{
 
 				<div className="button-home">
 					<button type="button" className="field-frame btn" onClick={onDeleteHandler}>
-						Aufraeumen
+						Aufräumen
 					</button>
 					<button type="submit" onClick={onSendProductHandler} className="field-frame btn">
 						Senden

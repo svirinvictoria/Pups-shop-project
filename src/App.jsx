@@ -60,11 +60,9 @@ function App() {
 			}
 		}
 		setFilteredList(newArr);
-	}, [typesList]);
+	}, [typesList, originalList]);
 
-	// console.log("2 " + filteredList);
-	// console.log("3 " + originalList);
-
+	
 	//sorting products by name
 	function compareByName(a, b) {
 		if (a.productName < b.productName) {
@@ -79,8 +77,6 @@ function App() {
 	const sortArray = (field) => {
 		const listToSort = [...filteredList];
 		const nameSort = listToSort.sort(compareByName);
-		// console.log(nameSort);
-		// console.log(listToSort);
 		setFilteredList(listToSort);
 	};
 
@@ -121,9 +117,9 @@ function App() {
 
 
 	const changeView =(event)=>{
-		setIsClicked(false);
+		setIsClicked(isClicked=> !isClicked);
 	}
-	console.log(isClicked);
+	
 
 	return (
 		<div className="d-flex flex-column mx-auto border-green main-body">
@@ -153,7 +149,7 @@ function App() {
 				</div>
 			</div>
 			<div className="footer-style">
-				<p className="footer-data">All Rights Reserved 2023</p>
+				<p className="footer-data">&copy; Svirin Victoria 2023</p>
 			</div>
 		</div>
 	);

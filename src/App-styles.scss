@@ -3,7 +3,7 @@
 }
 .main-body{
   min-height: 100vh ;
-  width:1200px;
+  max-width: 55rem;
   box-sizing: border-box;
   position: relative;
   padding: 0%;
@@ -31,50 +31,6 @@
   padding-top: 1.2rem;
 }
 
-//body
-// .container-box{
-//   height: 80%;
-//   width: 100%;
-//   margin: 5% 0;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-// }
-// .product-show{
-//   margin: 5rem 3rem;
-//   display: flex;
-//   flex-flow: row wrap;
-//   justify-content: space-between;
-//   align-items: center;
-//   width: 65%;
-// }
-
-// //ticket
-// .product-ticket{
-//   height: 40%;
-//   width: 22%;
-//   border-radius: 15px;
-//   background-color: rgb(16, 123, 3);
-// }
-// .ticket-body{
-//   height: 60%;
-//   background-color: #fff;
-// }
-// .ticket-header{
-//   height: 2rem;
-//   color: white;
-//   text-align: center;
-//   font-weight: 600;
-//   padding-top: 0.25rem;
-// }
-
-// .ticket-footer{
-//   height: 20%;
-//   color: white;
-//   text-align: center;
-//   font-size: 80%;
-//   padding-top: 0.2rem;
-// }
 
 //buttons
 .btn-1{
@@ -87,15 +43,18 @@
    
 }
 
+
+
 //selection-list
 .product-list{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: rgb(204, 227, 203);
-  width: 25%;
+  width: 35%;
   height: 90%;
   margin-right: 2%;
+  // margin-top: 2%;
 }
 .selection-window{
   margin: 1.5rem 1rem ;
@@ -103,35 +62,6 @@
    height: 13rem;
    width:85%;
 }
-
-// .product-selection{
-//    display: flex;
-//    flex-direction: column;
-//    align-items: center;
-//    justify-content: space-around;
-// }
-
-// .field-frame{
-//   border: 1px solid black;
-//   width: 85%;
-//   height: 1.8rem;
-//   color: gray;
-//   font-size: 90%;
-//   text-align: center;
-// }
-// .button-home{
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   width: 90%;
-// }
-// .btn{
-//   border-radius: 3px;
-//   background-color: lightgray;
-//   padding: 0;
-//   width: 43%;
-//   font-size: 0.8em;
-// }
 
 //check-boxes
 .check-home{
@@ -158,50 +88,21 @@
 //////////////////////////////////////////////
 //Tablet - big
 @media screen and (max-width: 1024px) {
-  .main-body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
+  
   .header{
   height: 5rem;
+  .title{
+    position: absolute;
+    top:2.5rem;
+    left:2.5rem;
+    width:30%;
+    height: 4rem;
+    font-weight: 700;
+    padding-top: 1rem;
+  }
 }
 
-// .container-box{
-//   height: 90%;
-//   width: 100%;
-// }
-// .product-show{
-//   margin: 1.5rem;
-//   width: 65%;
-// }
-  .title{
-  position: absolute;
-  top:2.5rem;
-  left:2.5rem;
-  width:30%;
-  height: 4rem;
-  font-weight: 700;
-  padding-top: 1rem;
-}
-// .btn{
-//   width: 80%;
-//   font-size: 0.7rem;
-//   color: black;
-// }
-// .product-ticket{
-//   height: 30%;
-//   width: 30%;
-//   margin-bottom: 1.5rem;
-// }
-// .ticket-body{
-//   height: 65%;
-// }
-// .ticket-header{
-//   height: 2.2rem;
-//   font-weight: 600;
-//   padding-top: 0.25rem;
-// }
+  
 .footer-style{
   padding-top: 0.6rem;
   position: absolute;
@@ -213,7 +114,7 @@
 
 //////////////***************///////////////////////
 /// //**Tablet - small**
-@media screen and (max-width:992px) {
+@media screen and (max-width:800px) {
    .main-body{
   // height: 90%;
   margin: 0;
@@ -222,46 +123,25 @@
  .header{
   height: 4rem;
   padding-top: 0.25rem;
-}
   .title{
-  top:2rem;
-  left:2rem;
-  width: 40%;
-  height: 4.5rem;
+    top:1rem;
+    left:1rem;
+    width: 50%;
+    height: 3.5rem;
+    margin: 0;
+  }
 }
-// .container-box{
-//   padding: 0;
-//   width: 100%;
-//   margin-top: 3%;
-// }
-// .button-home{
-//   flex-direction: column;
-//   width: 85%;
-// }
-// .btn{
-//   width: 100%;
-//   margin-bottom: 0.5rem;
-// }
-// .product-ticket{
-//   height: 20%;
-//   width: 37%;
-// }
-// .ticket-body{
-//   height: 65%;
-//   background-color: #fff;
-// }
-// .ticket-header{
-//   height: 20%;
-//   color: white;
-// }
-
-// .ticket-footer{
-//   height: 1rem;
-//   color: white;
-//   text-align: center;
-//   font-size: 80%;
-//   padding-top: 0.2rem;
-// }
+  
+.btn-1{
+  margin-top: 2rem;
+  font-weight: 600;
+  height: 3rem;
+  width: 10rem;
+  align-self: center;
+}
+.product-list{
+  width: 25%;
+}
 .footer-style{
   padding-top: 0.5rem;
   position: absolute;
@@ -279,54 +159,34 @@
 .header{
   height: 4rem;
   position: relative;
+  .title{
+    position: absolute;
+    top:50%;
+    left:1rem;
+    width: 60%;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 110%;
+    padding-top: 0.4rem;
+    padding-bottom: 0;
+  }
 }
 
-.title{
-  position: absolute;
-  top:1rem;
-  left:1rem;
-  width: 60%;
-  height: 5rem;
+
+.inner-style{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ justify-content:center;
+ padding: 0;
+}
+.btn-1{
+  margin-top: 3rem;
   font-weight: 500;
-  font-size: 110%;
-  padding-top: 0.9rem;
+  height: 2.5rem;
+  width: 10rem;
+  align-self: center;
 }
-
-//body
-// .container-box{
-//   flex-direction: column;
-//   width: 100%;
-//   height: 100%;
-// }
-// .product-show{
-//   flex-flow: column wrap;
-//   width: 100%;
-//   margin-left: 0%;
-//   margin-top: 10%;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// //ticket
-// .product-ticket{
-//   height: 11rem;
-//   width: 60%;
-// }
-// .ticket-body{
-//   height: 65%;
-// }
-// .ticket-header{
-//   height: 2rem;
-// }
-
-// .ticket-footer{
-//   height: 1rem;
-//   color: white;
-//   text-align: center;
-//   font-size: 90%;
-//   padding-top: 0.2rem;
-// }
-
 //selection-list
 .product-list{
   width: 85%;
@@ -337,29 +197,6 @@
   margin: 1.5rem auto;
   padding: 0%;
 }
-
-// .product-selection{
-//    display: flex;
-//    flex-direction: column;
-//    align-items: center;
-//    justify-content: space-around;
-// }
-
-// // .field-frame{
-// //   border: 1px solid black;
-// //   width: 85%;
-// //   height: 1.8rem;
-// //   color: gray;
-// //   font-size: 90%;
-// //   text-align: center;
-// // }
-// .button-home{
-//   width: 90%;
-// }
-// .btn{
-//   width: 90%;
-//   font-size: 0.9em;
-// }
 
 //check-boxes
 .check-home{

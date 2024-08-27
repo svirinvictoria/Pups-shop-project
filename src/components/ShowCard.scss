@@ -1,51 +1,62 @@
 //container
-.container-box{
+
+.inner-style {
+  margin-top: 1rem;
+  
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-around;
+}
+.container-box {
   height: 90%;
- width: 100%;
+  max-width: 52rem;
   margin: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.inner-style{
-  margin-top: 1rem;
-  display: flex;
-  align-items:first baseline;
-   justify-content: space-around;
-}
-.product-show{
+
+.product-show {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  width: 75%;
+  max-width: 90%;
+ margin: 0;
+ padding: 0;
 }
 
 //ticket
-.product-ticket{
+.product-ticket {
   height: 11rem;
   width: 28%;
   border-radius: 15px;
   margin-bottom: 5%;
 }
 
-.green{
-    background-color: rgb(16, 123, 3);
+.green {
+  background-color: rgb(16, 123, 3);
 }
-.yellow{
-    background-color: rgba(231, 231, 20, 0.938);
+.yellow {
+  background-color: rgba(231, 231, 20, 0.938);
 }
-.red{
-    background-color: darkred;
+.red {
+  background-color: darkred;
 }
-.blue{
-    background-color: skyblue;
+.blue {
+  background-color: skyblue;
 }
-.ticket-body{
-  height: 60%;
+.ticket-body {
+  height: 7rem;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  img {
+    height: 100%;
+    max-width: 95%;
+  }
 }
-.ticket-header{
+.ticket-header {
   height: 20%;
   color: white;
   text-align: center;
@@ -53,7 +64,7 @@
   padding-top: 0.25rem;
 }
 
-.ticket-footer{
+.ticket-footer {
   height: 20%;
   color: white;
   text-align: center;
@@ -63,118 +74,110 @@
 
 //Tablet - big
 @media screen and (max-width: 1024px) {
-
-.container-box{
-  height: 90%;
-  width: 100%;
-}
-.product-show{
-  margin: 1rem;
-  width: 75%;
-}
-  .title{
-  position: absolute;
-  top:2.5rem;
-  left:2.5rem;
-  width: 30%;
-  height: 4rem;
-  font-weight: 700;
-  padding-top: 1rem;
-}
-// .btn{
-//   width: 80%;
-//   font-size: 0.7rem;
-//   color: black;
-// }
-.product-ticket{
-  width: 30%;
-  margin-bottom: 1rem;
-}
-.ticket-body{
-  height: 65%;
-}
-.ticket-header{
-  height: 2.2rem;
-  font-weight: 600;
-  padding-top: 0.25rem;
-}
-
+  .container-box {
+    height: 90%;
+    width: 100%;
+  }
+  .product-show {
+    margin: 1rem;
+    width: 85%;
+  }
+  .title {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    width: 30%;
+    height: 4rem;
+    font-weight: 700;
+    padding-top: 1rem;
+  }
+  
+  .product-ticket {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .ticket-body {
+    height: 65%;
+  }
+  .ticket-header {
+    height: 2.2rem;
+    font-weight: 600;
+    padding-top: 0.25rem;
+  }
 }
 
 //////////////***************///////////////////////
 /// //**Tablet - small**
-@media screen and (max-width:992px) {
+@media screen and (max-width: 800px) {
+  .product-show {
+    padding: 0;
+    width: 75%;
+    margin-top: 1%;
+  }
+  .container-box {
+    padding: 0;
+    width: 100%;
+  }
+
+  .product-ticket {
+    width: 45%;
+    .ticket-header {
+      height: 20%;
+      color: white;
+    }
+    .ticket-body {
+      height: 65%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+    
+    } 
+    .ticket-footer {
+      height: 1rem;
+      color: white;
+      text-align: center;
+      font-size: 80%;
+      padding-top: 0.2rem;
+    }
+  }
   
-.product-show{
-  padding: 0;
-  width: 80%;
-  margin-top: 1%;
-}
-.container-box{
-  padding: 0;
-  width: 100%;
-}
 
-.product-ticket{
-  width: 45%;
-}
-.ticket-body{
-  height: 65%;
-  background-color: #fff;
-}
-.ticket-header{
-  height: 20%;
-  color: white;
-}
-
-.ticket-footer{
-  height: 1rem;
-  color: white;
-  text-align: center;
-  font-size: 80%;
-  padding-top: 0.2rem;
-}
-.footer-style{
-  padding-top: 0.5rem;
-}
+  
+  .footer-style {
+    padding-top: 0.5rem;
+  }
 }
 ///----------------------------------///////
 /// //Cellular
 @media screen and (max-width: 600px) {
+  //body
+  .container-box {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-show {
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 0% auto;
+    justify-content: space-around;
+  }
 
-//body
-.container-box{
-  flex-direction: column;
-  width: 90%;
-  height: 100%;
+  .product-ticket {
+    width: 40%;
+  }
+  
 }
-.product-show{
-  flex-flow: column wrap;
-  width: 100%;
-  margin-left: 0%;
-  margin-top: 10%;
-  align-items: center;
-  justify-content: center;
-}
-
-//ticket
-.product-ticket{
-  height: 13rem;
-  width: 65%;
-}
-.ticket-body{
-  height: 65%;
-}
-.ticket-header{
-  height: 2rem;
-}
-
-.ticket-footer{
-  height: 1rem;
-  color: white;
-  text-align: center;
-  font-size: 90%;
-  padding-top: 0.2rem;
-}
-
+///----------------------------------///////
+/// //SMALL Cellular
+@media screen and (max-width: 450px) {
+  .product-show {
+   
+    .product-ticket {
+      width: 60%;
+    }
+  }
+  
 }

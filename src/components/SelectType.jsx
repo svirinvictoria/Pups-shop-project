@@ -3,7 +3,6 @@ import "./SelectType.scss";
 
 
 const SelectType = (props) => {
-	// console.log(props.typesList);
 	
 	// const [typeChoice, setTypeChoice] = useState("");//the type that we have chosen
 

@@ -2,7 +2,7 @@ import "./ShowTable.scss"
 const ShowTable = (props)=>{
     
     return (
-			<div className="">
+			<div className="table-container">
 				<table className="table-style ">
 					<thead>
 						<tr>
